@@ -1,0 +1,88 @@
+.comment__form {
+    width:100%;
+    margin: 0 auto 1rem;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.comment__form > div {
+    margin-bottom: 15px;
+}
+
+#comment__form-name,
+.comment__form-text {
+    font-family: "Lora", serif;
+    width: 100%;
+    padding: 0.8rem;
+    padding: 0.8rem 1.2rem;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-sizing: border-box; 
+    margin-bottom: 10px;
+}
+.comment__form-success {
+    text-align: center;
+}
+
+.comment__form-text {
+    height: 11rem;
+    resize: none;
+}
+
+.comment__form-checkbox{
+    font-size: 14px;
+    color: #555;
+}
+.comment__form-checkbox > input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(0.8);
+}
+
+.comment__form-button {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.comment__form input[type="checkbox"] {
+    appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid green; 
+    border-radius: 1rem;
+    margin-right: 0.5rem; 
+    cursor: pointer; 
+    position: relative; 
+    flex-shrink: 0; 
+}
+  
+.comment__form input[type="checkbox"]:checked {
+    background-color: green;
+}
+  
+.comment__form input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 3px; 
+    width: 5px; 
+    height: 10px; 
+    border: solid white; 
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.comment__form div {
+    display:flex;
+}
+.comment__form label{
+    display:flex;
+    align-items: center;
+}
+
+@media screen and (min-width: 600px) {
+    .comment__form-button{
+        width: auto;
+    }
+}

@@ -1,0 +1,115 @@
+:root {
+  font-family: "Lora", serif;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  width: 100%;
+  background-color: beige;
+}
+
+main{
+  width: 100%;
+  flex-grow: 1;
+}
+
+a {
+  text-decoration: none;
+  color: black
+}
+
+h1,h2,h3 {
+  font-family: "Merriweather", serif;
+}
+button {
+  color: black;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1.2em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  background-color: beige;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+  /* border-radius: 25px; */
+}
+
+button:hover {
+  /* border-color: #646cff; */
+  background-color: #b3b39a;
+  transform: scale(1.05);
+}
+
+/* button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} */
+
+
+/***************************************
+  Page content styling & responsiveness.
+****************************************/
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.page__content-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.page__content-section{
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid #dddddd;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 240);
+  /* background-color: rgb(223, 223, 200); */
+  /* background-color: white; */
+}
+.page__content-section h2,
+.page__content-section h4 {
+  margin: 0.5rem 0;
+}
+
+.section-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.section-header h2 {
+  color:black;
+}
+
+@media screen and (min-width:900px) {
+  .page__content-section{
+      width: 80%;
+  }
+}
+@media screen and (min-width:1800px) {
+  .page__content-section{
+      width: 70%;
+  }
+}
+
+@media screen and (min-width:2000px) {
+  .page__content-section{
+      width: 60%;
+  }
+}

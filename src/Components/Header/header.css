@@ -1,0 +1,76 @@
+.header-container{
+    background-color: #236e26;
+    width: 100%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 0.5rem;
+    padding-bottom: 0;
+    box-sizing: border-box;
+    /* background: linear-gradient(to right, #008C45 33.33%, #F4F5F0 33.33%, #F4F5F0 66.66%, #CD212A 66.66%); */
+}
+.header {
+    background-image: url('/images/MangiaHeader.webp');
+    background-size:cover;
+    background-position: center;
+    border-radius: 15px;
+    display:flex;
+    height: 20vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+    align-items: center; 
+    justify-content: center; 
+}
+.header-text > * {
+    font-family: 'Cinzel, serif';
+    color: rgb(255, 208, 0);
+    margin: 0; 
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+
+}
+.header__name {
+    font-size: 4rem;
+}
+
+.header__slogan {
+    display:none;
+    font-size: 2rem;
+}
+
+.header-link{
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center; 
+    justify-content: center; 
+}
+
+@media screen and (min-width: 500px) {
+    .header__name {
+        font-size: 6rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .header-container{
+        padding: 1rem;
+        padding-bottom: 0;
+    }
+    .header {
+        height: 50vh; 
+        justify-content: left; 
+        text-align: start;
+    }
+    .header-text{
+        padding-left: 10%;
+    }
+    .header__name {
+        font-size:10rem;
+    }
+    .header__slogan{
+        font-size: 4rem;
+        display:block;
+    }
+    
+}

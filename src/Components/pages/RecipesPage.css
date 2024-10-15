@@ -1,0 +1,42 @@
+.recipe-page-container {
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  max-width: 60rem;
+  width: 100%;
+  margin: 3rem auto;
+  background-color: #ffffff;
+}
+
+.rating-comment-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.comment__form-container{
+  max-width: 49%;
+  flex: 1;
+}
+
+.rating h2 {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .recipe-page-container {
+    margin: 0 auto;
+  }
+
+  .rating-comment-container {
+    flex-direction: column;
+  }
+
+  .comment__form-container{
+    max-width: 100%;
+    order: 2;
+  }
+
+  .rating {
+   margin-bottom: 2rem;
+  }
+}
