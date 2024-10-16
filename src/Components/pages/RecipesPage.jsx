@@ -7,6 +7,7 @@ import Rating from "../Rating/Rating";
 import RecipeDetails from "../RecipeDetails/RecipeDetails";
 import CommentForm from "../CommentForm/CommentForm";
 import CommentContainer from "../CommentContainer/CommentContainer";
+import RecipeShare from "../RecipeShare/RecipeShare"
 import "./RecipesPage.css";
 import { fetchData } from "../../api";
 
@@ -57,6 +58,7 @@ function RecipesPage({ recipes, categories }) {
           </div>  
           
           <CommentContainer comments={comments}/>
+          <RecipeShare />
         </div>
       </main>
 
